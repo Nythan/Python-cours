@@ -1,4 +1,4 @@
-x = int(input("Quel taille de damier voulait vous ?"))
+x = int(input("Quel taille de damier voulait vous ? "))
 
 for i in range(0,x):
     for j in range(0,x):
