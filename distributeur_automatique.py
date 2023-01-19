@@ -10,26 +10,28 @@ while distribMax != 0:
     if rendre <= distribMax:
         print("Je vous rend la monaie :", rendre)
         distribMax = distribMax - rendre
-        if rendre%5 == 0:
-            x=rendre/5
-            if x <=billet:
-                print("Je vous rend :", x ,"billets de 5 € et 0 pièce de 1 €")
-                billet=billet-x
+        if billet != 0:
+            if rendre%5 == 0:
+                x=rendre/5
+                if x <=billet:
+                    print("Je vous rend :", x ,"billets de 5 € et 0 pièce de 1 €")
+                    billet=billet-x
+                else:
+                    z=x-billet
+                    print("Je vous rend : ",billet," billets de 5 € et :",z*5,  "pièces de 1 €")
+                    billet = billet - z
             else:
-                z=x-billet
-                print(z)
-                print("Je vous rend : ",billet," billets de 5 € et :",z,  "pièces de 1 €")
-                billet = billet - z
+                l=rendre//5
+                rest = rendre - rendre//5*5
+                if  l>billet:
+                    h=l-billet
+                    print("Je vous rend : ",billet," billets de 5 € et :",h*5+rest,"pièce de 1 €")
+                    billet=billet-h
+                else:
+                    print("Je vous rend : ",l," billets de 5 € et :",rest,"pièce de 1 €")
+                    billet = billet-l
         else:
-            l=rendre//5
-            rest = rendre - rendre//5*5
-            if  l>billet:
-                h=l-billet
-                print("Je vous rend : ",billet," billets de 5 € et :",h*5+rest,"pièce de 1 €")
-                billet=billet-h
-            else:
-                print("Je vous rend : ",l," billets de 5 € et :",rest,"pièce de 1 €")
-                billet = billet-l
+            print("Je vous rend : ", billet, " billets de 5 € et :", rendre, "pièce de 1 €")
     else:
         print("Je n'ai pas assez de monaie !")
 
