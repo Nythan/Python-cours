@@ -34,5 +34,4 @@ while distribMax != 0:
             print("Je vous rend : ", billet, " billets de 5 € et :", rendre, "pièce de 1 €")
     else:
         print("Je n'ai pas assez de monaie !")
-
-
+print("Je ne peux plus rien vendre le tiroir caisse est vide")
