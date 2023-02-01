@@ -16,7 +16,7 @@ def somme(premier,second)-> int:
     total = 0
     for i in range(premier,second+1):
         test.append(int(i))
-    print(test)
+    #print(test)
     for i in range(len(test)):
         total = total + int(test[i])
     print(total)
