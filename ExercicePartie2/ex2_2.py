@@ -11,7 +11,7 @@ def saisieEntierSuivant(premier : int) -> int:
     return second
 
 
-def somme(premier,second)-> int:
+def somme(premier : int,second : int)-> int:
     test=[]
     total = 0
     for i in range(premier,second+1):

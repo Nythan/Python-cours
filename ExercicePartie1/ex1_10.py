@@ -2,7 +2,9 @@ test = 0
 liste = []
 
 while test != 4:
-    saisie = input("Saisir un chiffre : ")
+    x="Saisir un chiffre (",test+1,") : "
+
+    saisie = input(x)
 
     if len(saisie) == 1:
         if 48 <= ord(saisie) <= 57:

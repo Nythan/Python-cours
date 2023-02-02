@@ -1,4 +1,4 @@
-def anagrammes(mot1, mot2):
+def anagrammes(mot1 : str, mot2 : str):
     if len(mot1) != len(mot2):
         print("les mots ont des longeu différente ils ne peuvent donc pas être des anagrammes")
         exit()
