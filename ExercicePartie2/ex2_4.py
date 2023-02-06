@@ -18,21 +18,21 @@ def ligne_creuse(car : str, nb : int) -> str:
         print(test)
         return test
 
-def rectangle_plein(car, longeur, largeur) -> str:
+def rectangle_plein(car:str, longeur:int, largeur:int) -> str:
     for i in range(longeur):
         ligne_pleine(car,largeur)
 
-def rectangle_creux(car, longeur, largeur) -> str:
+def rectangle_creux(car:str, longeur:int, largeur:int) -> str:
     ligne_pleine(car,largeur)
     for i in range(longeur-2):
         ligne_creuse(car, largeur)
     ligne_pleine(car,largeur)
 
-def triangle_plein(car, hauteur) -> str:
+def triangle_plein(car:str, hauteur:int) -> str:
     for i in range(hauteur):
         ligne_pleine(car,i)
 
-def triangle_creux(car,hauteur) -> str:
+def triangle_creux(car:str,hauteur:int) -> str:
     ligne_pleine(car,1)
     for i in range(2,hauteur):
         ligne_creuse(car,i)
