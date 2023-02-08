@@ -1,13 +1,22 @@
-
+def verif(x : str) -> bool:
+    if 48 <= ord(x) <= 57:
+        return True
+    else:
+        return False
 def saisirEntier() -> int:
-    premier = int(input("entrez un entier : "))
-    return premier
+    premier = (input("entrez un entier : "))
+    ok = False
+    for i in range(len(premier)):
+         while not verif(premier[i]):
+            premier = (input("entrez un entier : "))
+
+    return int(premier)
 
 def saisieEntierSuivant(premier : int) -> int:
-    second = int(input("entrez un second entier strictement supérieur au premier : "))
-    if second <= premier:
-        second = int(input("vous avez entrez un entier plus petit ou égale au premier"
-                           "entrez un second entier strictement supérieur au premier : "))
+    second = saisirEntier()
+    while premier+1 > second:
+        print("Saisir un entier plus grand")
+        second = saisirEntier()
     return second
 
 
@@ -19,7 +28,8 @@ def somme(premier : int,second : int)-> int:
     #print(test)
     for i in range(len(test)):
         total = total + int(test[i])
-    print(total)
+    return total
 
 x = saisirEntier()
-somme(x,saisieEntierSuivant(x))
+print(x)
+print(somme(x,saisieEntierSuivant(x)))
