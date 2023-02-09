@@ -5,7 +5,6 @@ def verif(x : str) -> bool:
         return False
 def saisirEntier() -> int:
     premier = (input("entrez un entier : "))
-    ok = False
     for i in range(len(premier)):
          while not verif(premier[i]):
             premier = (input("entrez un entier : "))
@@ -31,5 +30,5 @@ def somme(premier : int,second : int)-> int:
     return total
 
 x = saisirEntier()
-print(x)
+#print(x)
 print(somme(x,saisieEntierSuivant(x)))
