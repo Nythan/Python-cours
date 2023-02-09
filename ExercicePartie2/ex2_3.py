@@ -1,6 +1,6 @@
 def anagrammes(mot1 : str, mot2 : str):
     if len(mot1) != len(mot2):
-        print("les mots ont des longeu différente ils ne peuvent donc pas être des anagrammes")
+        print("les mots ont des longeurs différentes ils ne peuvent donc pas être des anagrammes")
         exit()
     arranged1 = "".join(sorted(mot1))
     arranged2 = "".join(sorted(mot2))
