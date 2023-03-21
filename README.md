@@ -16,3 +16,7 @@
 
     -partie 2 des exo du PDF de TD
 
+>4- Exercice Partie 3
+
+    -partie 3 des exo du PDF de TD
+
