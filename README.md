@@ -4,6 +4,8 @@
 
     chahierExos2223.pdf est le pdf de td pour l'année 2022-2023
 
+    supportPythonL1.pdf est le pdf de cours pour l'année 2022-2023
+
 >1- CM 
 
     -Cours magistraux
