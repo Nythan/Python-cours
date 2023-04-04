@@ -21,5 +21,3 @@
 ## Exercice Partie 3
 
     -partie 3 des exo du PDF de TD
-
-tes^t
