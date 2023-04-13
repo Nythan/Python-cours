@@ -1,20 +1,21 @@
-def decomposer(ch: str) -> list:
-    t = []
+def decomposer(ch : str) -> list[tuple[str,int]]:
+    ll = list(ch)
+    lres = []
     i = 0
-    chl = list(ch)
-    while i < len(chl):
-        car = chl[i]
-        y = 1
+
+    while i < len(ll):
+        car = ll[i]
         j = i+1
-        while j < len(chl):
-            if car == chl[j]:
-                y = y + 1
-                del chl[j]
+        cpt = 1
+        while j < len(ll):
+            if ll[j] == car:
+                cpt = cpt+1
+                del ll[j]
             else:
-                j=j+1
-        t.append((chl[i], y))
-        i = i+1
-    return t
+                j = j+1
+        i = i +1
+        lres.append((car,cpt))
+    return lres
 
 print(decomposer("bonjour"))
 print(decomposer("aaa"))
