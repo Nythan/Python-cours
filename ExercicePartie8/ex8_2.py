@@ -15,6 +15,6 @@ vitesse = saisirEntier()
 
 try:
     test = distance / vitesse
-    print("la veleur est ", test)
+    print("la valeur est ", test)
 except ZeroDivisionError:
     print("Il y a une division par zero ")
